@@ -1,0 +1,24 @@
+{
+    "name": "The Quran Verse.",
+    "short_name": "Quran Verse",
+    "description": "Read and listen to the Quran online. Explore our comprehensive collection of recitations and translations. Start your spiritual journey today!",
+    "icons": [
+        {
+            "src": "/public/path/to/android-icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/public/path/to/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "orientation": "any",
+    "scope": "/",
+    "lang": "en"
+}

@@ -1,0 +1,1091 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Fira+Code:wght@300;400;600;700&family=Josefin+Sans:wght@100&family=Lato:ital,wght@0,400;1,300&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Body Styles */
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Added background color for visibility */
+  transition: top 0.3s; /* Smooth transition for hiding/showing */
+  z-index: 1000; /* Ensuring it's above other content */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+header nav .forphonescreen {
+  display: none;
+}
+
+header .headerContainerDiv {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+header div .Logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+}
+
+/* Banner Styles */
+.Banner {
+  height: 360px;
+  width: 100%;
+  background-color: #73CCC9;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.BannerBtns  {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.BannerBtns button {
+  border-radius: 40px;
+  outline: none;
+  padding: 10px 18px;
+  background-color: #fff;
+  border: none;
+  font-size: 12px;
+  color: #333;
+  margin-left: 17px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Container Styles */
+.containen-div {
+  height: 89%;
+}
+
+.text-img-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textImg {
+  width: 300px;
+  padding: 10px;
+}
+
+/* Search Form Styles */
+.search-form {
+  width: 600px;
+  height: 50px;
+  border-radius: 40px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-input {
+  font-size: 14px;
+  background: none;
+  color: #5a6674;
+  width: 85%;
+  height: 20px;
+  border: none;
+  appearance: none;
+  outline: none;
+}
+
+.search-form button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  fill: #5a6674;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
+}
+
+/* Sura Body Styles */
+.sura-body {
+  width: 82%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 35px;
+  margin: 50px auto;
+}
+
+.sura-body a {
+  color: black;
+}
+
+.sura-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffff;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+}
+
+.sura-name:hover {
+  border: 1px solid #1c9995;
+  color: #1c9995;
+}
+
+.sura-titale-with-id {
+  display: flex;
+}
+
+.sura-titale-with-id .sura-id {
+  width: 50px;
+  height: 50px;
+  background: #F4F5F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  color: #212121;
+}
+
+.sura-titale {
+  margin-left: 10px;
+  flex-direction: column;
+  display: flex;
+  align-self: center;
+}
+
+.sura-titale h3,
+.sura-titale-with-name h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #212121;
+}
+
+.sura-titale p,
+.sura-titale-with-name p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  header .headerContainerDiv {
+    height: 55px;
+  }
+
+  header nav{
+    width: 30vw;
+  }
+  
+  header .headerContainerDiv {
+    width: 92%;
+  }
+
+  .sura-body {
+    width: 92%;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .headerContainerDiv {
+    height: 55px;
+  }
+
+  header nav{
+    width: 35vw;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav .forpcscreen{
+    display: none;
+  }
+
+  header nav .forphonescreen{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  header nav .forphonescreen span{
+    margin-left:4px ;
+  }
+
+  header .headerContainerDiv {
+    width: 92%;
+  }
+
+  .search-form {
+    width: 320px;
+    height: 50px;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  .textImg {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .sura-body {
+    width: 92%;
+    gap: 20px;
+  }
+}
+
+/* Loading Spinner Styles */
+.loading-spinner-overlay {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3; 
+  border-top: 4px solid #1c9995; 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Ayah Detail Styles */
+.ayahhBodyContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 90px;
+}
+
+.ayahhBodyContainer .ayahHeading {
+  font-family: 'Fira Code', monospace;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.ayahHeader {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+/* Slide Button Styles */
+.slide-button {
+  width: 185px;
+  height: 40px;
+  background-color: #f8f9fa;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.slider {
+  width: 50%;
+  height: 30px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family:'Poppins', sans-serif ;
+  font-size: 12px;
+  position: relative;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.textIcon {
+  display: none;
+}
+
+.slide-button.on {
+  background-color: #e7e8e9; 
+}
+
+.slide-button.off {
+  background-color: #e7e8e9; 
+}
+
+.slide-button.on .slider {
+  transform: translateX(80px);
+}
+
+.slide-button.off .slider {
+  transform: translateX(0);
+}
+
+/* Ayah Info Styles */
+.ayahInfoHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backBtn {
+  border-radius: 5px;
+  outline: none;
+  padding: 0px 8px;
+  background-color: #fff;
+  border: 1px solid #1c9995;
+  font-size: 16px;
+  color: #333333cc;
+  transition: all 0.3ms;
+}
+
+.backBtn:hover {
+  background-color: #1c9995;
+  color: #fff;
+}
+
+.ayahInfoHeader p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.ayahInfoHeader h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #212121;
+}
+
+.textImg1Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: -25px;
+}
+
+.textImg1 {
+  width: 260px;
+  height: 40px;
+}
+
+/* Ayah Text Container Styles */
+.ayahTextConteiner {
+  margin: 50px 0px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.contentContainer .contentHeader span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  background: #F4F5F6;
+  margin-top: 4px;
+}
+
+.ayahTextDiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 0px;
+}
+
+.ayahText {
+  text-align: right;
+  color: #212529;
+  font-family: 'Amiri Quran', serif;
+  line-height: 2.5;
+  font-size: 28px;
+  width: 82%;
+}
+
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.contentHeader div {
+  display: flex;
+}
+
+.contentHeader p {
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.contentHeader button {
+  border-radius: 40px;
+  outline: none;
+  padding: 10px 18px;
+  background-color: #fff;
+  border: 1px solid #1c9995;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Translation Text Styles */
+.TranslationText {
+  padding: 25px 15px;
+}
+
+.TranslationText p {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #212529;
+  width: 95%;
+}
+
+/* Yseen Container Styles */
+.YseenContaoner {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* Read Text Container Styles */
+.ReadTextConteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ReadTextConteiner p {
+  color: #212529;
+  font-family: 'Amiri Quran', serif;
+  line-height: 2.3;
+  font-size: 24px;
+  width: 50%;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.ReadTextId {
+  padding: 0px 5px;
+  color: #1c9995;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .ReadTextConteiner p {
+    width: 100%;
+    font-size: 24px;
+  }
+  
+  .ayahhBodyContainer {
+    width: 92%;
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ayahTextConteiner {
+    margin: 30px 0px;
+  }
+
+  .ReadTextId{
+    font-size: 14px;
+  }
+
+  .slide-button {
+    width: 179px;
+    height: 30px;
+  }
+
+  .slider {
+    height: 80%;
+  }
+  
+  .ReadTextConteiner p .ReadTextSpan{
+    width: 100%;
+    font-size: 24px;
+  }
+  
+  .ayahhBodyContainer {
+    margin-top: 85px;
+  }
+
+  .ayahhBodyContainer .ayahHeading {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .textImg1Div {
+    margin-bottom: 50px;
+    margin-top: -30px;
+  }
+
+  .textImg1 {
+    width: 200px;
+    height: 30px;
+  }
+
+  .ayahhBodyContainer {
+    width: 92%;
+  }
+  
+  .contentHeader {
+    padding: 15px 0px;
+  }
+
+  .surahTitale {
+    display: none;
+  }
+  
+  .TranslationText p {
+    width: 98%;
+  }
+
+  .TranslationText {
+    padding: 25px 2px;
+  }
+  
+  .ayahText {
+    font-size: 22px;
+    width: 92%;
+    line-height: 2.5;
+  }
+
+  .ReadTextConteiner p {
+    width: 94%;
+    font-size: 20px;
+  }
+}
+
+/* ==================================== style of quranReadSVGContainer =========*/
+
+.quranReadSVGContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Add this line */
+  margin-top: 50px;
+}
+
+.quran-preview {
+  width: 40%;
+  border: 1px solid #333;
+  margin: 20px auto; /* Change margin to auto */
+}
+.page-num {
+  margin-bottom: 20px; /* Adjust margin as needed */
+  font-family: 'Poppins', sans-serif;
+  margin: auto; /* This line might override the previous margin-bottom, consider removing it */
+}
+
+.page-num h3{
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.controls {
+  width: 100vw;
+  position: sticky; /* Change from fixed to sticky */
+  background: #fff;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+
+}
+
+.controls div{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.controls div input{
+  width: 50px;
+  outline: none;
+  border: 1px solid #079691;
+  padding: 2px 10px;
+  margin: 0px 4px;
+  border-radius: 5px;
+}
+
+.controls button {
+  border-radius: 40px;
+  outline: none;
+  padding: 10px 18px;
+  background-color: #fff;
+  border: 1px solid #1c9995;
+  font-size: 12px;
+  color: #333;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.controls button:hover{
+  background-color: #079691;
+  color: #fff;
+}
+
+.controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.infoJuz {
+  max-height: 300px; 
+  overflow: auto;
+  margin-top: 20px; 
+}
+
+.infoJuz h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.infoJuz ul li{
+  margin-top: 8px;
+}
+
+.infoJuz ul li h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+
+
+
+/* ============================ audio player quran ========================= */
+
+.audioContainer{
+  width: 100vw;
+}
+
+.msgPlayBanner{
+  font-family: 'Poppins', sans-serif;
+}
+
+.audioBanner{
+  width: 80%;
+  height: 140px;
+  background-color: #73CCC9;
+  color: #fff;
+  margin: 74px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.audioSelect{
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius:10px;
+}
+
+.audioSelect span{
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.audioBanner div audio{
+  background-color: none;
+  display: none;
+}
+
+.audioBanner div h3{
+  font-family: 'Poppins', sans-serif; 
+}
+
+.custom-audio-controls {
+  width: 210px;
+  height: 80px;
+  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-ranges{
+  position: absolute;
+  top: 1px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-ranges input[type=range]{
+  -webkit-appearance: none;
+  height: 5px;
+  background-color: #ddd;
+  outline: none;
+  width: 100%;
+}
+
+.audio-ranges input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 2px solid #73CCC9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-buttons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   border-radius: 5px;
+   margin-top: 5px;
+}
+
+.custom-buttons button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 8px;
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+}
+
+.button-container{
+  width: 100%;
+  background: #fff;
+}
+
+.closeAudioButton{
+  position: absolute;
+  top: 18px;
+  right: 100px;
+  cursor: pointer;
+  font-size: 20px;
+}
+ 
+.read-sura-container{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 35px;
+  margin: 60px auto;
+}
+
+.read-sura-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+  background-color: #ffff;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+}
+
+.read-sura-box:hover{
+  border: 1px solid #73CCC9;
+}
+
+.playButton{
+  width: 50px;
+  height: 50px;
+  background: #F4F5F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  color: #212121;
+  transition: all ease-in-out 0.5s;
+}
+
+.playButton:hover{
+  background: #73CCC9;
+  color: #fff;
+}
+
+.Isplaying{
+  background: #73CCC9;
+  color: #fff;
+}
+
+.notIsplaying{
+  background: #F4F5F6;
+  color: #212121;
+}
+
+/*========================== recent read sura =================*/
+
+.recentReadContainer{
+  width: 82%;
+  margin: 10px auto;
+}
+
+.recentReadContainer h3{
+  font-family: 'Poppins', sans-serif ;
+  font-weight: 500;
+  color: #333;
+  margin-top: 20px;
+}
+
+.recentReadBox{
+  width: 200px;
+  height: 205px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  margin-right: 15px;
+  flex: none;
+}
+
+.recentReadBox:hover{
+  border: 1px solid #1c9995;
+}
+
+.recentRead_contain{
+  padding: 15px;
+}
+
+.recentRead_top_div{
+  width: 100%;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.recentRead_top_div span{
+  font-size: 14px;
+  font-weight: 600;
+  color: #5a6674;
+  cursor: pointer;
+} 
+
+.recentRead_contain .recentLink{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.recentLink:hover{
+  border-bottom: 2px solid #333;
+}
+
+.recentRead_name_box{
+  width: 98%;
+  height: 100px;
+  background-color: #ebf9fa;
+  color: #2ca4ab;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cateHorzantle{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap; 
+  margin-top: 22px;
+}
+.cateHorzantle::-webkit-scrollbar{
+  display: none;
+}
+
+.pageNotfound{
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNotfound div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif ; 
+}
+
+.pageNotfound div h2{
+  font-weight: 400;
+  color: #333;
+}
+
+.pageNotfound div .button{
+  padding: 8px 16px;
+  background: #1c9995;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .audioBanner{
+    width: 92%;
+  }
+  .recentReadContainer{
+    width: 92%;
+  }
+  .quran-preview {
+    width: 92%;
+    margin: 20px auto; /* Change margin to auto */
+  }
+  .custom-buttons button{
+    font-size: 19px;
+  }
+  .read-sura-container{
+    width: 92%;
+    margin: 30px auto;
+    gap: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .read-sura-container{
+    width: 92%;
+    margin: 30px auto;
+    gap: 20px;
+  }
+  .controls button {
+    padding: 8px 14px;
+    font-size: 11px;
+    margin: 0px 5px;
+  }
+  .audioBanner{
+    width: 92%;
+  }
+
+  .infoJuz ul li h3{
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .controls div{
+    font-size: 12px;
+  }
+  .custom-buttons button{
+    font-size: 18px;
+  }
+  
+  .closeAudioButton{
+    font-size: 16px;
+    right: 20px;
+  }
+
+  .controls div input {
+    margin: 0px 8px;
+  }
+}
